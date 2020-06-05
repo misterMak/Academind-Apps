@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:academind_app1/result_page.dart';
 import 'package:academind_app1/questions_manager.dart';
 
 class Home extends StatefulWidget {
@@ -9,6 +10,13 @@ class Home extends StatefulWidget {
 class _Home extends State<Home> {
   int _quizIndex = 0;
   int _score = 0;
+
+  void _goReset() {
+    setState(() {
+      _quizIndex = 0;
+      _score = 0;
+    });
+  }
 
   void _goNextQuiz([int score = 0]) {
     _score += score;
@@ -28,7 +36,7 @@ class _Home extends State<Home> {
         child: Container(
           child: (_quizIndex < QuestionsManager.questions.length)
               ? QuestionsManager(_goNextQuiz, _quizIndex)
-              : Center(child: Text("FINISHED! \nYOUR SCORE: $_score")),
+              : ResultPage(_score, _goReset),
         ),
       ),
     );
