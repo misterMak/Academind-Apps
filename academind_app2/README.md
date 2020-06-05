@@ -1,6 +1,6 @@
-# academind_app2
+# Personal Expenses App
 
-A new Flutter project.
+My 3rd Flutter project.
 
 ## Getting Started
 
