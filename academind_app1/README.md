@@ -1,4 +1,4 @@
-# academind_app1
+# Baisc Quiz App
 
 A new Flutter project.
 
