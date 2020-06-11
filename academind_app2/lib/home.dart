@@ -2,7 +2,7 @@ import 'package:academind_app2/transaction.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  List<Transaction> transactions = [
+  final List<Transaction> transactions = [
     Transaction(
       title: 'New Shoues',
       id: 1,
