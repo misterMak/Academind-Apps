@@ -1,6 +1,6 @@
-# world_time
+# Personal World-Time App
 
-A new Flutter project.
+My 3rd Flutter project.
 
 ## Getting Started
 
